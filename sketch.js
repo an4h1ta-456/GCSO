@@ -1,7 +1,7 @@
 var car, wall;
 var speed, weight;
 
-function setUp(){
+function setup(){
   createCanvas(1600, 400);
 
   speed=random(55,90)
@@ -12,6 +12,7 @@ function setUp(){
 }
 
 function draw(){
+  background("black");
 
   if(wall.x-car.x<(car.width+wall.width)/2)
   {
